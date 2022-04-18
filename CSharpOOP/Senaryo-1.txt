@@ -1,0 +1,23 @@
+﻿
+Base
+Id
+
+Hasta
+
+Ad
+Soyad
+DoğumTarih
+TCNo
+
+Doktor
+Ad
+Soyad
+Poliklinik ( 1 adet departmanı var)
+
+
+Poliklinik
+Ad
+KurulusTarih
+
+
+

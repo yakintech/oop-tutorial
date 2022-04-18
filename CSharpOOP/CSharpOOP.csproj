@@ -9,10 +9,14 @@
     <None Remove="Models\" />
     <None Remove="Games\" />
     <None Remove="BankSample\" />
+    <None Remove="HastaneOrnek\" />
+    <None Remove="OkulOrnek\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Games\" />
     <Folder Include="BankSample\" />
+    <Folder Include="HastaneOrnek\" />
+    <Folder Include="OkulOrnek\" />
   </ItemGroup>
 </Project>

@@ -2,6 +2,8 @@
 using CSharpOOP.Models;
 using CSharpOOP.Games;
 using CSharpOOP.BankSample;
+using CSharpOOP.HastaneOrnek;
+using CSharpOOP.OkulOrnek;
 
 namespace CSharpOOP
 {
@@ -10,7 +12,49 @@ namespace CSharpOOP
         static void Main(string[] args)
         {
 
+            Fakulte fakulte = new Fakulte("Fen");
 
+
+
+            Bolum bolum = new Bolum();
+            bolum.Ad = "Fizik";
+            bolum.Fakulte = fakulte;
+
+
+
+            //Bölümün fakültesinin adını büyük harflerle ekrana yaz!
+            Console.WriteLine(bolum.Fakulte.Ad);
+
+
+            #region hastaneSample
+            Poliklinik poliklinik = new Poliklinik("KBB", 2000);
+
+
+            Doktor doktor = new Doktor("Çağatay","Yıldız", poliklinik);
+            Doktor doktor1 = new Doktor("Abdullah", "Tekin", poliklinik);
+
+            Hasta hasta = new Hasta();
+            hasta.Ad = "Mert";
+            hasta.DogumTarih = new DateTime(1998, 1, 1);
+            hasta.TCNo = "8842812491";
+
+
+            Islem islem = new Islem();
+            islem.Doktor = doktor;
+            islem.Hasta = hasta;
+            islem.IslemTarihi = DateTime.Now;
+            islem.Not = "Grip olmuşum";
+
+            //Bu işlemin olduğu polikliniği adı nedir?
+            Console.WriteLine(islem.Doktor.Poliklinik.Ad);
+
+
+
+            #endregion
+
+
+
+            #region bankAccountSample
             BankAccount bankAccount = new BankAccount("Çağatay", 1000);
 
 
@@ -30,7 +74,7 @@ namespace CSharpOOP
                 {
                     bankAccount.MakeDeposit(amount, DateTime.Now, note);
                 }
-                else if(operation == "w")
+                else if (operation == "w")
                 {
                     bankAccount.MakeWithdrawal(amount, DateTime.Now, note);
                 }
@@ -42,6 +86,9 @@ namespace CSharpOOP
                 Console.WriteLine("İşlem sonrasın mevcut bakiyeniz: " + bankAccount.Balance);
 
             }
+
+            #endregion
+
 
 
             //Batman batman = new Batman("Çağatay", "Erzurum");
