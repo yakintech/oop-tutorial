@@ -1,0 +1,25 @@
+﻿Örneğin bir eticaret portalı geliştiriyorum ve onun modellerini uygulamamda oluşturuyorum.
+
+MODELLER
+
+Category
+Id
+Name
+Description
+
+
+Product
+Id
+Name
+UnitPrice
+UnitsInStock
+CategoryId
+SupplierId
+Category ( Category classs ı)
+Supplier ( Supplier class ı)
+
+
+Supplier
+Id
+CompanyName
+ContanctName
