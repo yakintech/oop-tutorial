@@ -14,6 +14,27 @@ namespace CSharpOOP
             BankAccount bankAccount = new BankAccount("Çağatay", 1000);
 
 
+            while (true)
+            {
+                Console.WriteLine("Lütfen işlem tutarını giriniz.");
+                decimal amount = Convert.ToDecimal(Console.ReadLine());
+
+                Console.WriteLine("İşleminiz para yatırma ise D çekme ise W tuşuna basıp entera basınız!");
+
+                string operation = Console.ReadLine().ToLower();
+
+                if (operation == "d")
+                {
+
+                }
+                else if(operation == "w")
+                {
+
+                }
+
+
+            }
+
 
             //Batman batman = new Batman("Çağatay", "Erzurum");
             //Batman batman1 = new Batman();
