@@ -10,5 +10,7 @@ namespace CSharpOOP.Games
         {
             Console.WriteLine("Hello! I am a Ninject!! Bir problem mi var");
         }
+
+       
     }
 }
