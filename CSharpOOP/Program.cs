@@ -19,19 +19,27 @@ namespace CSharpOOP
                 Console.WriteLine("Lütfen işlem tutarını giriniz.");
                 decimal amount = Convert.ToDecimal(Console.ReadLine());
 
+                Console.WriteLine("Lütfen işlem notunu giriniz");
+                string note = Console.ReadLine();
+
                 Console.WriteLine("İşleminiz para yatırma ise D çekme ise W tuşuna basıp entera basınız!");
 
                 string operation = Console.ReadLine().ToLower();
 
                 if (operation == "d")
                 {
-
+                    bankAccount.MakeDeposit(amount, DateTime.Now, note);
                 }
                 else if(operation == "w")
                 {
-
+                    bankAccount.MakeWithdrawal(amount, DateTime.Now, note);
+                }
+                else
+                {
+                    break;
                 }
 
+                Console.WriteLine("İşlem sonrasın mevcut bakiyeniz: " + bankAccount.Balance);
 
             }
 
