@@ -1,6 +1,7 @@
 ﻿using System;
 using CSharpOOP.Models;
 using CSharpOOP.Games;
+using CSharpOOP.BankSample;
 
 namespace CSharpOOP
 {
@@ -9,12 +10,17 @@ namespace CSharpOOP
         static void Main(string[] args)
         {
 
-            Ninject ninject = new Ninject();
 
-            ninject.Hello();
-
+            BankAccount bankAccount = new BankAccount("Çağatay", 1000);
 
 
+
+            //Batman batman = new Batman("Çağatay", "Erzurum");
+            //Batman batman1 = new Batman();
+
+
+            //Ninject ninject = new Ninject();
+            //ninject.Hello();
 
 
             #region OOP-Sample-1
