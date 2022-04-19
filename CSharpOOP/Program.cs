@@ -4,6 +4,7 @@ using CSharpOOP.Games;
 using CSharpOOP.BankSample;
 using CSharpOOP.HastaneOrnek;
 using CSharpOOP.OkulOrnek;
+using CSharpOOP.BlogSample;
 
 namespace CSharpOOP
 {
@@ -11,19 +12,21 @@ namespace CSharpOOP
     {
         static void Main(string[] args)
         {
-
-            Fakulte fakulte = new Fakulte("Fen");
-
-
-
-            Bolum bolum = new Bolum();
-            bolum.Ad = "Fizik";
-            bolum.Fakulte = fakulte;
+            BlogPost blogPost = new BlogPost();
+            blogPost.Title = "barCelona ne oynadı be!";
 
 
+            Console.Write(blogPost.Title);
+            Console.Read();
 
-            //Bölümün fakültesinin adını büyük harflerle ekrana yaz!
-            Console.WriteLine(bolum.Fakulte.Ad);
+            //BlogHelper blogHelper = new BlogHelper();
+            //blogHelper.TitleCapitalize("");
+
+            BlogHelper.TitleCapitalize("");
+            Math.Sin(30);
+            Console.Write("");
+
+            Console.Write(BlogHelper.companyName);
 
 
             #region hastaneSample

@@ -1,6 +1,7 @@
 ﻿using System;
 namespace CSharpOOP.BankSample
 {
+    //Inheritance
     public class GiftCardAccount : BankAccount
     {
 
