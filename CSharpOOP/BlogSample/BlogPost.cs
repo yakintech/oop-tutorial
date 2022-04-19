@@ -20,6 +20,8 @@ namespace CSharpOOP.BlogSample
 
         public string Content { get; set; }
 
+        public DateTime AddDate { get; set; } = DateTime.Now;
+
         public BlogCategory BlogCategory { get; set; }
 
     }

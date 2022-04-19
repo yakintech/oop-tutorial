@@ -12,8 +12,17 @@ namespace CSharpOOP
     {
         static void Main(string[] args)
         {
+
+
+
             BlogPost blogPost = new BlogPost();
             blogPost.Title = "barCelona ne oynadı be!";
+
+
+            User user = new User();
+            user.Password = "123";
+
+            Console.Write(user.Password);
 
 
             Console.Write(blogPost.Title);
