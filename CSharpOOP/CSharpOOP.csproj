@@ -12,6 +12,7 @@
     <None Remove="HastaneOrnek\" />
     <None Remove="OkulOrnek\" />
     <None Remove="BlogSample\" />
+    <None Remove="NewsSample\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -20,5 +21,6 @@
     <Folder Include="HastaneOrnek\" />
     <Folder Include="OkulOrnek\" />
     <Folder Include="BlogSample\" />
+    <Folder Include="NewsSample\" />
   </ItemGroup>
 </Project>

@@ -5,6 +5,7 @@ using CSharpOOP.BankSample;
 using CSharpOOP.HastaneOrnek;
 using CSharpOOP.OkulOrnek;
 using CSharpOOP.BlogSample;
+using CSharpOOP.NewsSample;
 
 namespace CSharpOOP
 {
@@ -13,7 +14,11 @@ namespace CSharpOOP
         static void Main(string[] args)
         {
 
+            News news = new News();
 
+            Console.Write(news.SubContent);
+
+            #region BlogPost
 
             BlogPost blogPost = new BlogPost();
 
@@ -21,7 +26,7 @@ namespace CSharpOOP
             blogPost.Title = "barCelona ne oynadı be!";
 
 
-            Console.WriteLine(blogPost.BlogCategory.Name);
+            Console.WriteLine(blogPost.BlogCategory?.Name);
 
             //1. yol
 
@@ -56,6 +61,8 @@ namespace CSharpOOP
             Console.Write("");
 
             Console.Write(BlogHelper.companyName);
+            #endregion
+
 
 
             #region hastaneSample
