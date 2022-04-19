@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace CSharpOOP.BlogSample
 {
     public class BlogComment : BlogBaseModel
@@ -8,6 +9,7 @@ namespace CSharpOOP.BlogSample
         {
             this.Title = title;
             this.Content = content;
+
         }
 
         public BlogPost BlogPost { get; set; }

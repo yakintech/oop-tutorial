@@ -16,7 +16,27 @@ namespace CSharpOOP
 
 
             BlogPost blogPost = new BlogPost();
+
+
             blogPost.Title = "barCelona ne oynadı be!";
+
+
+            Console.WriteLine(blogPost.BlogCategory.Name);
+
+            //1. yol
+
+            if (blogPost.BlogCategory != null)
+            {
+                Console.WriteLine(blogPost.BlogCategory.Name);
+
+            }
+
+
+            //2. yol
+
+            Console.WriteLine(blogPost.BlogCategory?.Name);
+
+
 
 
             User user = new User();

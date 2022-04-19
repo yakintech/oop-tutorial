@@ -3,6 +3,7 @@ namespace CSharpOOP.BlogSample
 {
     public class BlogPost : BlogBaseModel
     {
+
         //Blog yazısı başlığındaki kelimeler her zaman büyük harf olmak zorunda.
 
         private string title = "";
