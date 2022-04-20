@@ -6,6 +6,7 @@ using CSharpOOP.HastaneOrnek;
 using CSharpOOP.OkulOrnek;
 using CSharpOOP.BlogSample;
 using CSharpOOP.NewsSample;
+using CSharpOOP.GameSample;
 
 namespace CSharpOOP
 {
@@ -13,7 +14,16 @@ namespace CSharpOOP
     {
         static void Main(string[] args)
         {
+            Yeniceri yeniceri = new Yeniceri("Mahmut");
 
+
+            //Sovalye sovalye = new Sovalye();
+            //sovalye.Hello();
+
+            Console.Read();
+
+
+            #region News
             News news = new News();
 
             Console.Write(news.SubContent);
@@ -61,6 +71,8 @@ namespace CSharpOOP
             Console.Write("");
 
             Console.Write(BlogHelper.companyName);
+            #endregion
+
             #endregion
 
 

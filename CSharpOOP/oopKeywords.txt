@@ -1,0 +1,6 @@
+﻿abstarct
+virtual
+override
+base
+constructor
+this
