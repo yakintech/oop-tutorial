@@ -8,5 +8,6 @@ namespace VehicleOOPSample.Models
                 return base.CalcVisaDate(ReleaseYear);
             }
         }
+
     }
 }

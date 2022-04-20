@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpOOP", "CSharpOOP.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleOOPSample", "VehicleOOPSample\VehicleOOPSample.csproj", "{8B0821B4-DF57-4FF1-883E-7EA6E7F004F2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6040F5C-B0AC-42FF-A3A7-7814C21E067E}"
+	ProjectSection(SolutionItems) = preProject
+		CSharpOOP.sln = CSharpOOP.sln
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
