@@ -16,11 +16,11 @@ namespace VehicleOOPSample.Models
 
         public Brand Brand { get; set; }
 
-        public int Year { get; set; }
+        public int ReleaseYear { get; set; }
 
-        protected virtual int CalcVisaDate(int year)
+        protected virtual int CalcVisaDate(int releaseYear)
         {
-            return year + 10;
+            return releaseYear + 10;
         }
     }
 }
