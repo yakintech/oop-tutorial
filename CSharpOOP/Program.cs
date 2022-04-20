@@ -14,8 +14,8 @@ namespace CSharpOOP
     {
         static void Main(string[] args)
         {
-            Yeniceri yeniceri = new Yeniceri("Mahmut");
 
+            Sovalye sovalye = new Sovalye("Abdullah");
 
             //Sovalye sovalye = new Sovalye();
             //sovalye.Hello();

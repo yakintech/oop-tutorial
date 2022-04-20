@@ -7,5 +7,12 @@ namespace CSharpOOP.Models
 
         public DateTime AddDate { get; set; }
 
+
+
+        protected virtual double CalcKDVPrice(double price)
+        {
+            return price * 1.18;
+        }
+
     }
 }

@@ -1,6 +1,23 @@
-﻿abstarct
+﻿KEYWORDS
+
+abstarct
 virtual
 override
 base
 constructor
 this
+protected
+private
+public
+
+
+
+
+
+Inheritance
+Intellisense
+Instance
+
+OOP Temel Prensipleri
+Encapsulation
+Inheritance
