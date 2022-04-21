@@ -14,6 +14,12 @@ namespace CSharpOOP
     {
         static void Main(string[] args)
         {
+            WebUser webUser = new WebUser();
+
+
+            Console.WriteLine(webUser);
+            Console.Read();
+            
 
             Sovalye sovalye = new Sovalye("Abdullah");
 

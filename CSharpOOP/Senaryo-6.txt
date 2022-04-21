@@ -1,12 +1,4 @@
-﻿Emlak  (Instance almak için lokasyon ZORUNLU)
-
-Lokasyon -> String
-Alan -> int
-SatisFiyat -> decimal
-KiraFiyat -> decimal
-SatisVergi -> SET EDİLEMEZ! satış fiyatının %1.2 sidir!
-KiraVergi -> SET EDİLEMEZ! kira fiyatının  %5 idir
-
+﻿
 Ev (ev oluştururken oda sayısı vermek zorunlu Instance - Constructor)
 OdaSayisi
 Kat
@@ -24,3 +16,7 @@ Villa  ( ev class ından miras alacak )
 HavuzVarMi -> bool
 BahceAlan -> Int
 GarajAlan -> Int
+
+Emlak class ına AddDate adında bir datetime ekle default now.
+Emlak class ına ViewDate adında string bir alan ekleyeceksin. Bu alan set EDİLEMEZ. bu alan addDate deki alanı aşağıdaki formatta gösterecek
+"20 April 2022, Wednesday"
