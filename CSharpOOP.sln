@@ -25,8 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatch", "TryCatch\TryCat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{811AF7A8-E95A-40F8-BBE1-E86C8E20820A}"
 	ProjectSection(SolutionItems) = preProject
-		Program.cs = Program.cs
+		CSharpOOP.sln = CSharpOOP.sln
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpEnum", "CSharpEnum\CSharpEnum.csproj", "{D7BBF082-37CC-4C65-A0DA-677127673A65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +76,10 @@ Global
 		{A5B38C16-BA3A-4B4F-B212-140A9A77BA29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5B38C16-BA3A-4B4F-B212-140A9A77BA29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5B38C16-BA3A-4B4F-B212-140A9A77BA29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BBF082-37CC-4C65-A0DA-677127673A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BBF082-37CC-4C65-A0DA-677127673A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BBF082-37CC-4C65-A0DA-677127673A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BBF082-37CC-4C65-A0DA-677127673A65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
