@@ -30,3 +30,9 @@ Name
 
 Mevsim ( ENUM olacak)
 
+
+PrintManager adında bir class aç
+
+PrintBeden adında bir metot oluştur. void olan bu metot dışarıdan IBeden alacak. ve console a "Bedeniniz " + Bedenno yazacak. Bu metodu console üzerinden herhangi bir classla çalıştır.
+
+PrintKumasTur adında bir metot oluştur. void olan bu metot dışarıdan IKumas alacak. ve console a "Kumaşınız " + KumasTur yazacak. Bu metodu console üzerinden herhangi bir classla çalıştır.
