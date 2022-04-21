@@ -9,6 +9,7 @@ this
 protected
 private
 public
+interface
 
 
 
@@ -21,3 +22,6 @@ Instance
 OOP Temel Prensipleri
 Encapsulation
 Inheritance
+
+
+implement

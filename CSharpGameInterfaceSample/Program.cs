@@ -13,7 +13,7 @@ namespace CSharpGameInterfaceSample
             string[] fruits = { "apple", "banana", "mango", "orange", "passionfruit", "grape" };
 
 
-            samuray.Where(q => q.City == "İzmir").Count();
+            samuray.Count();
 
             fruits.Count();
 
