@@ -21,6 +21,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpEntityInterfaceSample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpProductInterfaceSample", "CsharpProductInterfaceSample\CsharpProductInterfaceSample.csproj", "{CB589342-11EA-4BC4-B8AA-9656CF058AE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatch", "TryCatch\TryCatch.csproj", "{A5B38C16-BA3A-4B4F-B212-140A9A77BA29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{811AF7A8-E95A-40F8-BBE1-E86C8E20820A}"
+	ProjectSection(SolutionItems) = preProject
+		Program.cs = Program.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +70,10 @@ Global
 		{CB589342-11EA-4BC4-B8AA-9656CF058AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB589342-11EA-4BC4-B8AA-9656CF058AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB589342-11EA-4BC4-B8AA-9656CF058AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B38C16-BA3A-4B4F-B212-140A9A77BA29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B38C16-BA3A-4B4F-B212-140A9A77BA29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B38C16-BA3A-4B4F-B212-140A9A77BA29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B38C16-BA3A-4B4F-B212-140A9A77BA29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
