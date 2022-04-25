@@ -27,10 +27,36 @@ namespace CSharpWriteReadFile
 
             string[] citiesLines = File.ReadAllLines(citiesPath);
 
+            List<City> cities = new List<City>();
+            foreach (var item in citiesLines)
+            {
+                City city = new City();
+                city.Name = item.Split(',')[0];
+
+                Country country = new Country();
+                country.Name = item.Split(',')[1];
+
+                city.Country = country;
+
+
+                cities.Add(city);
+
+            }
+
             //bool istanbulVarMi = citiesLines.Any(q => q.ToLower().Contains("istanbul"));
             //Console.WriteLine("İstanbul var mı: " + istanbulVarMi);
 
 
+            var result = cities.GroupBy(q => q.Country.Name)
+                .Select(x => new
+            {
+                cityQuantity = x.Count(),
+                countryName = x.FirstOrDefault().Country.Name
+            }).OrderByDescending(q => q.cityQuantity).ToList()[0];
+
+
+
+            Console.WriteLine("Country" + result.countryName);
 
 
 
