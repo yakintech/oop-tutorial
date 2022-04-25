@@ -27,8 +27,16 @@ namespace CSharpWriteReadFile
 
             string[] citiesLines = File.ReadAllLines(citiesPath);
 
-            int x = 3;
+            //bool istanbulVarMi = citiesLines.Any(q => q.ToLower().Contains("istanbul"));
+            //Console.WriteLine("İstanbul var mı: " + istanbulVarMi);
 
+
+
+
+
+
+            Console.Read();
+              
             //txt den çektiği ülkeleri Country listesine ATA!!!
 
             //List<Country> countries = new List<Country>();
