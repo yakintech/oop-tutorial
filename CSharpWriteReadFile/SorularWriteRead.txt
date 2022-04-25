@@ -1,0 +1,5 @@
+﻿* ülkeleri ekrana yazdır.
+* kaç ülke var?
+* a harfiyle başlayan ülkeleri ekrana yazdır.
+* a harfiyle biten ülkeleri ekrana yazdır
+
