@@ -1,16 +1,12 @@
 ﻿using System;
 namespace CSharpOOP.Games
 {
-    public class Ninject : GameCharachter
+    public class Ninject 
     {
         public string KindOfSword { get; set; }
 
+        public string Name { get; set; }
 
-        public override void Hello()
-        {
-            Console.WriteLine("Hello! I am a Ninject!! Bir problem mi var");
-        }
-
-       
+        public string City { get; set; }
     }
 }

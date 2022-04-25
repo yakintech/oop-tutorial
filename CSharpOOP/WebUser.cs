@@ -1,5 +1,5 @@
 ﻿using System;
-namespace CSharpOOP
+namespace CSharpOOP.Deneme
 {
     public class WebUser
     {
@@ -16,3 +16,5 @@ namespace CSharpOOP
 
     }
 }
+
+

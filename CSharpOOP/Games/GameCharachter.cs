@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CSharpOOP.Games
 {
-    public class GameCharachter
+    public abstract class GameCharachter : Base
     {
         public string Name { get; set; }
 

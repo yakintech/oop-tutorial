@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CSharpEnum
 {
-    public enum Category
+    public enum Category 
     {
        Electronic = 1,
        Sport = 2,

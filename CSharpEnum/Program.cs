@@ -6,15 +6,16 @@ namespace CSharpEnum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Level.Low);
 
-            Console.WriteLine(Convert.ToInt32(Level.High));
+            var person = new Person();
 
-            Console.WriteLine(Category.Sport);
+            Person person2;
 
-            Console.Read();
+            Person s; s = new Person();
 
-            
+            person = new Person();
+
+
         }
     }
 }
