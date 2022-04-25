@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using CSharpWriteReadFile.Models;
+
 
 namespace CSharpWriteReadFile
 {
@@ -18,6 +21,28 @@ namespace CSharpWriteReadFile
 
             string[] lines = File.ReadAllLines(path);
 
+
+
+            string citiesPath = "/Users/cagatayyildiz/Desktop/projects/oop-tutorial/CSharpWriteReadFile/cities.txt";
+
+            string[] citiesLines = File.ReadAllLines(citiesPath);
+
+            int x = 3;
+
+            //txt den çektiği ülkeleri Country listesine ATA!!!
+
+            //List<Country> countries = new List<Country>();
+
+            //foreach (var item in lines)
+            //{
+            //    Country newCountry = new Country();
+            //    newCountry.Name = item;
+
+            //    countries.Add(newCountry);
+            //}
+
+
+
             #region soru-1
             //Soru-1
             //* ülkeleri ekrana yazdır.
@@ -28,7 +53,6 @@ namespace CSharpWriteReadFile
 
             //Console.Read();
             #endregion
-
 
             #region soru-2
             //Soru-2
@@ -61,8 +85,6 @@ namespace CSharpWriteReadFile
             //    Console.WriteLine(item);
             //});
             #endregion
-
-
 
             #region soru-4
             //a harfiyle biten ülkeleri ekrana yazdır
