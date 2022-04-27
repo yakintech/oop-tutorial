@@ -156,6 +156,28 @@ namespace CsharpAdoNet.Manager
             return count;
         }
 
+        public List<Product> SearchName(string name)
+        {
+            List<Product> products = new List<Product>();
+            SqlConnection sqlConnection = new SqlConnection(Connection.connectionString);
+            sqlConnection.Open();
+            SqlCommand cmd = new SqlCommand("select * from Products where ProductName like  '%'+ @name + '%'", sqlConnection);
+            cmd.Parameters.AddWithValue("@name", name);
+
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Product product = new Product();
+                product.Id = Convert.ToInt32(reader["ProductID"]);
+                product.Name = reader["ProductName"].ToString();
+                product.UnitPrice = Convert.ToDecimal(reader["UnitPrice"]);
+                product.UnitsInStock = Convert.ToInt32(reader["UnitsInStock"]);
+                products.Add(product);
+            }
+            sqlConnection.Close();
+
+            return products;
+        }
 
     }
 }

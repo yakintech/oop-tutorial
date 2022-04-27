@@ -12,6 +12,9 @@ namespace CsharpAdoNet
         {
 
             ProductManager productManager = new ProductManager();
+
+            productManager.SearchName("ton");
+
             productManager.GetProductsCount();
            // productManager.DeleteProduct(78);
 
