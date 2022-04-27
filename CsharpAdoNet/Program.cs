@@ -12,32 +12,36 @@ namespace CsharpAdoNet
         {
 
             ProductManager productManager = new ProductManager();
+            productManager.GetProductsCount();
+           // productManager.DeleteProduct(78);
 
             var products = productManager.GetAllProducts();
 
-
-            Product newProduct = new Product();
-            newProduct.Name = "IPhone";
-            newProduct.UnitPrice = 55;
-            newProduct.UnitsInStock = 2;
-
-
-            productManager.AddProduct(newProduct);
+            //#region
+            //Product newProduct = new Product();
+            //newProduct.Name = "IPhone";
+            //newProduct.UnitPrice = 55;
+            //newProduct.UnitsInStock = 2;
 
 
-
-            Console.WriteLine("Lütfen istediğiniz ürünün ID sini giriniz");
-
-            int productId = Convert.ToInt32(Console.ReadLine());
+            //productManager.AddProduct(newProduct);
 
 
-            var product = productManager.GetProductById(productId);
 
-            Console.WriteLine("Name: " + product.Name);
-            Console.WriteLine("UnitPrice: " + product.UnitPrice);
-            Console.WriteLine("Stock: " + product.UnitsInStock);
+            //Console.WriteLine("Lütfen istediğiniz ürünün ID sini giriniz");
 
-            Console.Read();
+            //int productId = Convert.ToInt32(Console.ReadLine());
+
+
+            //var product = productManager.GetProductById(productId);
+
+            //Console.WriteLine("Name: " + product.Name);
+            //Console.WriteLine("UnitPrice: " + product.UnitPrice);
+            //Console.WriteLine("Stock: " + product.UnitsInStock);
+
+            //Console.Read();
+
+            //#endregion
 
 
 

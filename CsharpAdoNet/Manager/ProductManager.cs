@@ -50,7 +50,6 @@ namespace CsharpAdoNet.Manager
             }
         }
 
-
         public Product GetProductById(int id)
         {
             using (SqlConnection sqlConnection = new SqlConnection(Connection.connectionString))
@@ -87,7 +86,6 @@ namespace CsharpAdoNet.Manager
             }
         }
 
-
         public void AddProduct(Product product)
         {
             using (SqlConnection sqlConnection = new SqlConnection(Connection.connectionString))
@@ -107,5 +105,57 @@ namespace CsharpAdoNet.Manager
                 sqlConnection.Close();
             }
         }
+
+        public void DeleteProduct(int id)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Connection.connectionString))
+            {
+                try
+                {
+                    sqlConnection.Open();
+
+                    var command = new SqlCommand("delete from Products where ProductID = @productId", sqlConnection);
+
+                    command.Parameters.AddWithValue("@productId", id);
+
+                    command.ExecuteNonQuery();
+
+
+                    sqlConnection.Close();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+             
+            }
+        }
+
+        //DB de kaç adet ürün olduğunu bana veren metot
+        public int GetProductsCount()
+        {
+
+            int count = 0;
+
+            using (SqlConnection sqlConnection = new SqlConnection(Connection.connectionString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand("select Count(*) from Products", sqlConnection);
+
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                   count = Convert.ToInt32(reader[0]);
+                }
+
+                sqlConnection.Close();
+            }
+
+            return count;
+        }
+
+
     }
 }
