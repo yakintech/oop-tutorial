@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDictionarySample", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWriteReadFile", "CSharpWriteReadFile\CSharpWriteReadFile.csproj", "{F2830825-B7BA-411F-A7CD-12A7BA7D7966}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpAdoNet", "CsharpAdoNet\CsharpAdoNet.csproj", "{8A6774B1-8FED-4789-9836-2D1AE5906E71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,10 @@ Global
 		{F2830825-B7BA-411F-A7CD-12A7BA7D7966}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2830825-B7BA-411F-A7CD-12A7BA7D7966}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2830825-B7BA-411F-A7CD-12A7BA7D7966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A6774B1-8FED-4789-9836-2D1AE5906E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6774B1-8FED-4789-9836-2D1AE5906E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6774B1-8FED-4789-9836-2D1AE5906E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6774B1-8FED-4789-9836-2D1AE5906E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

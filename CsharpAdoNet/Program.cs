@@ -4,6 +4,7 @@ using CsharpAdoNet.Manager;
 
 namespace CsharpAdoNet
 {
+    //AYNI İŞLEMİ SUPPLİER İLE YAP
     class Program
     {
         static void Main(string[] args)
@@ -11,6 +12,11 @@ namespace CsharpAdoNet
             ProductManager productManager = new ProductManager();
 
             var products = productManager.GetAllProducts();
+
+
+            SupplierManager supplierManager = new SupplierManager();
+
+            var suppliers = supplierManager.GetAllSuppliers();
 
             //string connectionString = "Server=94.73.145.4;Database=u9751868_db9EC;User Id=u9751868_user9EC;Password=PWtw68S5BRcg01S;";
 

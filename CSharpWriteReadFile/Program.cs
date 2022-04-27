@@ -47,16 +47,16 @@ namespace CSharpWriteReadFile
             //Console.WriteLine("İstanbul var mı: " + istanbulVarMi);
 
 
-            var result = cities.GroupBy(q => q.Country.Name)
-                .Select(x => new
-            {
-                cityQuantity = x.Count(),
-                countryName = x.FirstOrDefault().Country.Name
-            }).OrderByDescending(q => q.cityQuantity).ToList()[0];
+            //var result = cities.GroupBy(q => q.Country.Name)
+            //    .Select(x => new
+            //{
+            //    cityQuantity = x.Count(),
+            //    countryName = x.FirstOrDefault().Country.Name
+            //}).OrderByDescending(q => q.cityQuantity).ToList()[0];
 
 
 
-            Console.WriteLine("Country" + result.countryName);
+            // Console.WriteLine("Country" + result.countryName);
 
 
 
