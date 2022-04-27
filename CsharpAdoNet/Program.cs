@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using CsharpAdoNet.Manager;
+using CsharpAdoNet.Models;
 
 namespace CsharpAdoNet
 {
@@ -9,7 +10,21 @@ namespace CsharpAdoNet
     {
         static void Main(string[] args)
         {
+
             ProductManager productManager = new ProductManager();
+
+            var products = productManager.GetAllProducts();
+
+
+            Product newProduct = new Product();
+            newProduct.Name = "IPhone";
+            newProduct.UnitPrice = 55;
+            newProduct.UnitsInStock = 2;
+
+
+            productManager.AddProduct(newProduct);
+
+
 
             Console.WriteLine("Lütfen istediğiniz ürünün ID sini giriniz");
 
@@ -25,7 +40,6 @@ namespace CsharpAdoNet
             Console.Read();
 
 
-            //var products = productManager.GetAllProducts();
 
 
             //SupplierManager supplierManager = new SupplierManager();

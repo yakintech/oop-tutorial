@@ -86,5 +86,26 @@ namespace CsharpAdoNet.Manager
 
             }
         }
+
+
+        public void AddProduct(Product product)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Connection.connectionString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand sqlCommand = new SqlCommand("insert into Products(ProductName, UnitPrice, UnitsInStock) values(@name, @price, @stock)", sqlConnection);
+
+                sqlCommand.Parameters.AddWithValue("@name", product.Name);
+                sqlCommand.Parameters.AddWithValue("@price", product.UnitPrice);
+                sqlCommand.Parameters.AddWithValue("@stock", product.UnitsInStock);
+
+
+                sqlCommand.ExecuteNonQuery();
+
+
+                sqlConnection.Close();
+            }
+        }
     }
 }
