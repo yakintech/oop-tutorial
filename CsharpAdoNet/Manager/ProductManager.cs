@@ -49,5 +49,42 @@ namespace CsharpAdoNet.Manager
 
             }
         }
+
+
+        public Product GetProductById(int id)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Connection.connectionString))
+            {
+                try
+                {
+                    sqlConnection.Open();
+                    string queryString = "select * from Products where ProductID = @productId";
+
+                    SqlCommand sqlCommand = new SqlCommand(queryString, sqlConnection);
+                    sqlCommand.Parameters.AddWithValue("@productId", id);
+
+                    var reader = sqlCommand.ExecuteReader();
+
+                    Product product = new Product();
+
+                    while (reader.Read())
+                    {
+                        
+                        product.Id = Convert.ToInt32(reader["ProductID"]);
+                        product.Name = reader["ProductName"].ToString();
+                        product.UnitPrice = Convert.ToDecimal(reader["UnitPrice"]);
+                        product.UnitsInStock = Convert.ToInt32(reader["UnitsInStock"]);
+                    }
+
+                    sqlConnection.Close();
+                    return product;
+                }
+                catch (Exception ex)
+                {
+                    throw ;
+                }
+
+            }
+        }
     }
 }
