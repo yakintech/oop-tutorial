@@ -10,10 +10,13 @@ namespace CsharpAdoNet
     {
         static void Main(string[] args)
         {
+            SupplierManager supplierManager = new SupplierManager();
 
-            var singletonInstance =  SingletonDBConnection.getDbInstance();
-            var singletonInstance2 = SingletonDBConnection.getDbInstance();
-            var singletonInstance3 = SingletonDBConnection.getDbInstance();
+            Supplier supplier = supplierManager.GetSupplierById(4);
+
+            //var singletonInstance =  SingletonDBConnection.getDbInstance();
+            //var singletonInstance2 = SingletonDBConnection.getDbInstance();
+            //var singletonInstance3 = SingletonDBConnection.getDbInstance();
 
 
 

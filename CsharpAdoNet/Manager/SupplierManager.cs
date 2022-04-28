@@ -8,6 +8,13 @@ namespace CsharpAdoNet.Manager
 {
     public class SupplierManager
     {
+        public SingletonDBConnection singletonDBConnection;
+
+        public SupplierManager()
+        {
+            singletonDBConnection = SingletonDBConnection.getDbInstance();
+        }
+
         public List<Supplier> GetAllSuppliers()
         {
             List<Supplier> suppliers = new List<Supplier>();
@@ -45,10 +52,37 @@ namespace CsharpAdoNet.Manager
                     return suppliers;
 
                 }
-            
+
 
 
             }
+        }
+
+
+        public Supplier GetSupplierById(int id)
+        {
+            SqlConnection sqlConnection = singletonDBConnection.GetDbConnection();
+
+            SqlCommand sqlCommand = new SqlCommand("select * from Suppliers where SupplierID = @supplierId", sqlConnection);
+
+            sqlCommand.Parameters.AddWithValue("@supplierId", id);
+
+            var reader = sqlCommand.ExecuteReader();
+
+            Supplier supplier = new Supplier();
+
+
+            while (reader.Read())
+            {
+                supplier.CompanyName = reader["CompanyName"].ToString();
+                supplier.ContactName = reader["ContactName"].ToString();
+
+            }
+
+            sqlConnection.Close();
+
+
+            return supplier;
         }
     }
 }
