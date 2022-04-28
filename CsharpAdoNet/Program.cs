@@ -10,6 +10,14 @@ namespace CsharpAdoNet
     {
         static void Main(string[] args)
         {
+
+            CustomerManager customerManager = new CustomerManager();
+
+            var customers = customerManager.GetCustomers("select * from Customers order by ContactName desc");
+
+
+
+
             OrderManager orderManager = new OrderManager();
 
             var orders = orderManager.GetOrders();
