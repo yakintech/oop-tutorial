@@ -10,6 +10,12 @@ namespace CsharpAdoNet
     {
         static void Main(string[] args)
         {
+            OrderManager orderManager = new OrderManager();
+
+            var orders = orderManager.GetOrders();
+
+
+
             SupplierManager supplierManager = new SupplierManager();
 
             Supplier supplier = supplierManager.GetSupplierById(4);
