@@ -23,8 +23,37 @@ namespace CsharpAdoNet.Manager
 
             SqlCommand command = new SqlCommand("select * from Orders", sqlConnection);
 
-            var reader = command.ExecuteReader();
+            SqlDataReader reader = command.ExecuteReader();
 
+            List<Order> orders = MapSqlDataToOrders(reader);
+
+            sqlConnection.Close();
+
+            return orders;
+
+          
+        }
+
+
+        public List<Order> GetOrders(string sortColumnName, string sortingType = "")
+        {
+            var sqlConnection = singletonDBConnection.GetDbConnection();
+
+            SqlCommand command = new SqlCommand("select * from Orders order by " + sortColumnName + " " + sortingType, sqlConnection);
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            List<Order> orders = MapSqlDataToOrders(reader);
+
+            sqlConnection.Close();
+
+            return orders;
+        }
+
+
+        //Bu metot sql sonucunu alıp bana orderlistesi verir. 
+        private List<Order> MapSqlDataToOrders(SqlDataReader reader)
+        {
             List<Order> orders = new List<Order>();
 
             while (reader.Read())
@@ -40,18 +69,9 @@ namespace CsharpAdoNet.Manager
                 order.ShipCounty = reader["ShipCountry"].ToString();
 
                 orders.Add(order);
-
-
             }
 
-            sqlConnection.Close();
-
             return orders;
-
-
-
-          
         }
-
     }
 }
