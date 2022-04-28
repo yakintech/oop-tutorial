@@ -25,6 +25,23 @@ namespace CsharpAdoNet
 
             return dbInstance;
         }
+
+
+
+        public SqlConnection GetDbConnection()
+        {
+            try
+            {
+                sqlConnection.Open();
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return sqlConnection;
+        }
+
         
     }
 }

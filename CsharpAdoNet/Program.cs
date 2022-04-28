@@ -11,6 +11,12 @@ namespace CsharpAdoNet
         static void Main(string[] args)
         {
 
+            var singletonInstance =  SingletonDBConnection.getDbInstance();
+            var singletonInstance2 = SingletonDBConnection.getDbInstance();
+            var singletonInstance3 = SingletonDBConnection.getDbInstance();
+
+
+
             ProductManager productManager = new ProductManager();
 
             productManager.SearchName("ton");
@@ -29,6 +35,7 @@ namespace CsharpAdoNet
 
             //productManager.AddProduct(newProduct);
 
+           
 
 
             //Console.WriteLine("Lütfen istediğiniz ürünün ID sini giriniz");
